@@ -1,0 +1,32 @@
+import { Divider } from "@chakra-ui/react";
+import React from "react";
+
+const Navbar = ({ accounts, setAccounts }) => {
+    const isConnected = Boolean(accounts[0]);
+
+    async function connectAccount() {
+        if (window.ethereum) {
+            const accounts = await window.ethereum.request({
+               method: "eth_requestAccounts",
+            });
+            setAccounts(accounts);
+        }
+    }
+
+    return (
+        <div>
+            {/* { Logo } */}
+            <div>logo</div>
+
+            {/* connect */}
+            {isConnected ? (
+                <p>Conncted</p>
+            ) : (
+                <button onClick={connectAccount}>connect</button>
+            )}
+        </div>
+    );
+
+};
+
+export default Navbar;
