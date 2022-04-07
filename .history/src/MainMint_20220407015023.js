@@ -33,22 +33,9 @@ const MainMint = ({ accounts, setAccounts}) => {
 
     return (
         <div>
-            <h1>A collection of 10,000 Enhanced Apes NFTs—unique digital collectibles residing on the BSC blockchain.</h1>
-            {isConnected ? (
-            <div>
-                <div>
-                    <button onClick={handleDescrement}>-</button>
-                    <input type="number" value={mintAmount} />
-                    <button onClick={handleincrement}>+</button>
-                </div>
-                <button onClick={handleMint}>Mint Now</button>
-            </div>
-        ) : (
-            <p>You must be connected to Mint</p>
-        )}
-        </div>
-    
-    );
-};
+            <h1>A collection of 10,000 Enhanced Apes NFTs—unique digital collectibles residing on the BSC blockchain.
 
-export default MainMint; 
+ROADMAP</h1>
+        </div>
+    )
+}

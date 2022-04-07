@@ -34,7 +34,7 @@ const MainMint = ({ accounts, setAccounts}) => {
     return (
         <div>
             <h1>A collection of 10,000 Enhanced Apes NFTs—unique digital collectibles residing on the BSC blockchain.</h1>
-            {isConnected ? (
+            {isConnected}
             <div>
                 <div>
                     <button onClick={handleDescrement}>-</button>
@@ -43,12 +43,6 @@ const MainMint = ({ accounts, setAccounts}) => {
                 </div>
                 <button onClick={handleMint}>Mint Now</button>
             </div>
-        ) : (
-            <p>You must be connected to Mint</p>
-        )}
         </div>
-    
-    );
-};
-
-export default MainMint; 
+    )
+}

@@ -24,7 +24,7 @@
 
 .App-link {
   color: #f7cd2a;
-  font-family: ThunderDemo;
+  font-family: ThunderDemo
 }
 
 .App-link:hover {
@@ -44,6 +44,6 @@
 
 @font-face {
   font-family: "ThunderDemo";
-  src: local("./Font/");
+  src: local("../public/Font/");
   url: ("./Font/ThunderDemo.ttf") format("truetype");
 }

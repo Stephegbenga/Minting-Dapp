@@ -44,6 +44,6 @@
 
 @font-face {
   font-family: "ThunderDemo";
-  src: local("./Font/");
+  src: local("../public/Font/");
   url: ("./Font/ThunderDemo.ttf") format("truetype");
 }

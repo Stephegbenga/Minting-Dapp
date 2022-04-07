@@ -50,5 +50,3 @@ const MainMint = ({ accounts, setAccounts}) => {
     
     );
 };
-
-export default MainMint; 
