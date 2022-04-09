@@ -1,14 +1,14 @@
 import { useState } from 'react';
-import './Mint.css';
+import './App.css';
 import MainMint from './MainMint'
 import Navbar from './NavBar'
 
-function Mint() {
+function App() {
     const [accounts, setAccounts] = useState([]);
 
     return (
         <div className="overlay">
-            <div className='Mint'>
+            <div className='App'>
                 <Navbar accounts={accounts} setAccounts={setAccounts} />
                 <MainMint accounts={accounts} setAccounts={setAccounts} />
             </div>
@@ -17,4 +17,4 @@ function Mint() {
     );
 }
 
-export default Mint;
+export default App;

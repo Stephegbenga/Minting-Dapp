@@ -23,7 +23,6 @@ const providerOptions = {
   const provider = await web3Modal.connect();
   
   const web3 = new Web3(provider);
-  
 
 const Navbar = ({ accounts, setAccounts }) => {
     const isConnected = Boolean(accounts[0]);

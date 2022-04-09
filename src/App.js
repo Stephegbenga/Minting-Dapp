@@ -1,6 +1,3 @@
-import './App.css';
-
-
 import { useState } from 'react';
 import './App.css';
 import MainMint from './MainMint'

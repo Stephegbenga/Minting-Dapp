@@ -1,17 +1,10 @@
 import React from "react";
 import { Box, Button, Flex, Spacer } from "@chakra-ui/react"
 import Web3 from "web3";
-import WalletConnectProvider from "@walletconnect/web3-provider";
 import Web3Modal from "web3modal";
 
-
-const providerOptions = {
-    walletconnect: {
-      package: WalletConnectProvider, // required
-      options: {
-        infuraId: "9da65cf530174e218e154a9fdd4bc229" // required
-      }
-    }
+const providerOptions = { wallecConnect
+    /* See Provider Options Section */
   };
   
   const web3Modal = new Web3Modal({
@@ -23,7 +16,6 @@ const providerOptions = {
   const provider = await web3Modal.connect();
   
   const web3 = new Web3(provider);
-  
 
 const Navbar = ({ accounts, setAccounts }) => {
     const isConnected = Boolean(accounts[0]);
